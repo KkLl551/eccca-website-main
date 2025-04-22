@@ -1,0 +1,124 @@
+.full-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding: 50px 0 130px;
+  background: url("/bg_all2.PNG");
+  background-size: cover;
+}
+
+.grid_a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.grid_a > header > h2 > span {
+  font-family: "Noto Serif";
+  color: #4e4e4e;
+  /* font-family: "Quicksand", sans-serif; */
+  font-weight: 200;
+  font-size: 3.5rem;
+}
+
+.header_sider {
+  margin-right: 30px;
+}
+
+.header_sider2 {
+  transform: rotate(180deg);
+  margin-left: 30px;
+}
+
+.container_t {
+  background-color: #fff;
+  border-radius: 20px;
+  border-width: thin;
+}
+
+.row1 {
+  display: flex;
+  text-align: left;
+  max-width: 1300px;
+  padding-top: 60px;
+}
+
+.img_container img {
+  width: 500px;
+  height: 350px;
+  margin-left: 40px;
+  margin-top: 20px;
+  box-shadow: 0px 4px 20px -6px rgba(0, 0, 0, 0.75);
+}
+
+.text1 {
+  max-width: 1300px;
+  padding: 40px 60px 0px;
+}
+
+.first-p {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+  color: black;
+}
+
+.second-p {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+  color: black;
+}
+
+.grid_7 {
+  margin-right: 30px;
+}
+
+.grid_7 > p {
+  width: 100%;
+  padding-left: 50px;
+  color: #393f4c;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.p2 {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 1100px) {
+  .row1 {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .grid_7 {
+    margin-top: 30px;
+    margin-right: -20px;
+  }
+
+  .grid_7 > p {
+    margin-right: 50px;
+    width: 80vw;
+  }
+
+  .img_container img {
+    width: 400px;
+    height: 270px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .img_container img {
+    width: 300px;
+    height: 200px;
+    margin-right: 30px;
+  }
+}

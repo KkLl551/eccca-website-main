@@ -1,0 +1,62 @@
+.cards_contain {
+  padding: 4rem;
+}
+
+.cards_contain > h1 {
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: grey;
+}
+
+.board_grid {
+  margin: 20px auto;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 100px;
+  padding: 40px;
+}
+
+.board_wrap {
+  padding: 5% 0;
+  font-size: 1.5rem;
+  opacity: 0.8;
+  text-align: left;
+}
+
+.board_wrap > p {
+  font-family: "Noto Serif";
+  color: #4e4e4e;
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.rounded-circle {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 1250px) {
+  .board_grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .board_grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .board_grid {
+    grid-template-columns: 1fr;
+  }
+  .rounded-circle {
+    height: 210px;
+    width: 210px;
+  }
+}

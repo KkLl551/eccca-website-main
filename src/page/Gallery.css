@@ -1,0 +1,11 @@
+.gallery > h1 {
+  font-family: "Noto Serif";
+  color: #4e4e4e;
+  font-size: 3.5rem;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.gallery-container {
+  padding-bottom: 100px;
+}

@@ -1,0 +1,13 @@
+.signin-container {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+.userpage {
+  width:100%;
+}
+
+.loginpage{
+  padding: 20%;
+}

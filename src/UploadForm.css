@@ -1,0 +1,73 @@
+.upload_label input {
+  height: 0;
+  width: 0;
+  opacity: 0;
+}
+.upload_label {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #efb6b2;
+  border-radius: 50%;
+  margin: 10px auto;
+  line-height: 30px;
+  color: #efb6b2;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.upload_label > span {
+  margin-left: 8px;
+}
+
+.upload_label:hover {
+  background: #efb6b2;
+  color: white;
+}
+.output {
+  height: 60px;
+  font-size: 0.8rem;
+}
+.error {
+  color: #ff4a4a;
+}
+
+.category-container button {
+  width:100%;
+  height: 50px;
+}
+
+.category-container {
+  min-width: 110px;
+  float: left;
+  width: 10%;
+}
+
+.upload_container button{
+  min-width: 80px;
+  height: 30px;
+}
+
+.upload_container img {
+  width:300px;
+  height:200px;
+}
+
+.upload_container {
+  float: right;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+}
+
+.uploadform-container {
+  width: 100%;
+  display: flex;
+}
+
+.pagi {
+  background-color: white;
+  border-radius: 20px;
+  border-width: thin;
+}

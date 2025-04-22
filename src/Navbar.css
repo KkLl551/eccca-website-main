@@ -1,0 +1,247 @@
+.navbar {
+  /*sidebar color fading from left to right*/
+  background: linear-gradient(90deg,
+      rgb(255, 255, 255) 20%,
+      rgb(255, 255, 255) 100%);
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  /*Line up in center */
+  align-items: center;
+  font-size: 1.2rem;
+  top: 0;
+  z-index: 999;
+  /*make this component the top layer*/
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  max-width: 1500px;
+}
+
+.navbar-logo {
+  padding-right: 5px;
+  display: flex;
+  justify-self: start;
+  cursor: pointer;
+  /*what the mouse look like when pointing to this*/
+  text-decoration: none;
+}
+
+.navbar-logo img {
+  height: 50px;
+}
+
+.homeSubTitle {
+  width: 400px;
+  text-align: center;
+}
+
+.homeSubTitle p {
+  color: #c22d00;
+  white-space: nowrap;
+}
+
+.symbol {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.symbol>img {
+  width: 8px;
+  height: 16px;
+}
+
+.nav-menu {
+  display: flex;
+  grid-template-columns: repeat(12, auto);
+  grid-gap: 10px;
+  list-style: none;
+  text-align: center;
+  width: 50vw;
+  justify-content: space-between;
+}
+
+.nav-item {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  color: #f19072;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.3rem 0.8rem;
+  height: 101%;
+  white-space: nowrap;
+  font-size: 1rem;
+}
+
+.nav-links:hover {
+  color: #640c0f;
+  border-bottom: 4px solid #640c0f;
+  transition: all 0.2s ease-out;
+}
+
+.fa-bars {
+  color: #f19072;
+}
+
+.nav-links-mobile {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 100000px) {
+  .NavbarItems {
+    position: flex;
+  }
+
+  .navbar {
+    justify-content: flex-start;
+  }
+
+  .navbar-logo {
+    margin-left: 10px;
+  }
+
+  .navbar-logo img {
+    margin-left: 10px;
+  }
+
+  .homeSubTitle {
+    display: none;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - 80px);
+    /* Adjust height to match screen size minus navbar height */
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    overflow-y: auto;
+    /* Enable vertical scrolling */
+    background-color: #fff;
+    /* Optional: Set background color */
+    z-index: 999;
+    /* Ensure it is above other content */
+    transition: all 0.5s ease;
+  }
+
+  body.no-scroll {
+    overflow: hidden;
+  }
+
+  .nav-menu.active {
+    background: #fff;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+  .nav-links {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+  }
+
+  .nav-links:hover {
+    background-color: #fff;
+    color: #242424;
+    border-radius: 0;
+  }
+
+  .navbar-logo {
+    display: flex;
+  }
+
+  .symbol>img {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 30px;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #f19072;
+  }
+
+  .fa-times {
+    color: #f19072;
+    font-size: 2rem;
+  }
+
+  .nav-time {
+    font-size: 15px;
+  }
+
+  .language-box {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    z-index: 1000;
+
+  }
+
+  /* 
+  .nav-links-mobile {
+    display: block;
+    text-align: center;
+    margin: 2rem auto;
+    border-radius: 4px;
+    width: 80%;
+    text-decoration: none;
+    font-size: 1.5rem;
+    background-color: transparent;
+    color: #fff;
+    padding: 14px 20px;
+    border: 1px solid #fff;
+    transition: all 0.3s ease-out;
+  }
+
+  .nav-links-mobile:hover {
+    background: #fff;
+    color: #242424;
+    transition: 250ms;
+  } */
+}
+
+/* @media screen and (max-width: 750px) {
+  .navbar-logo {
+    padding-right: 300px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .navbar-logo {
+    padding-right: 100px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar-logo {
+    padding-right: 1000px;
+  }
+} */

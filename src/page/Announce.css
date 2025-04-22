@@ -1,0 +1,27 @@
+.announce > h1 {
+  font-family: "Noto Serif";
+  color: #4e4e4e;
+  font-size: 3.5rem;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.announce > h4 {
+  font-family: "Noto Serif";
+  color: #4e4e4e;
+  font-size: 1.5rem;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.announce > p {
+  font-family: "Noto Serif";
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.announce-container {
+  padding-bottom: 100px;
+  background: url("/bg_all2.PNG");
+  background-size: cover;
+}

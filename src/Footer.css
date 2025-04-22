@@ -1,0 +1,33 @@
+.footer__container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: #640c0f;
+  padding-top: 5px;
+  /* margin-top: 80px; */
+}
+
+.footer__text {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.footer__icon {
+  margin-left: 30px;
+}
+
+.youtubeicon {
+  color: white;
+}
+
+.fbicon {
+  color: white;
+}
+
+.dragonicon {
+  color: white;
+}

@@ -1,0 +1,53 @@
+.ever-img-grid {
+    margin: 20px auto;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 40px;
+    padding: 40px;
+    width: 90%;
+    box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.75);
+  }
+  
+  /* padding controls height, will always be perfectly square regardless of width */
+  .ever-img-wrap {
+    overflow: hidden;
+    padding: 5% 0;
+    position: relative;
+    opacity: 0.8;
+    text-align: center;
+  }
+  
+  .ever-img-wrap > p {
+    text-align: center;
+    font-family: "Noto Serif";
+    color: #141414;
+    font-size: 1.5rem;
+  }
+  
+  .ever-img-wrap img {
+    max-height: 450px;
+    min-width: 100px;
+    min-height: 450px;
+    max-width: 190%;
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+  }
+  
+  /* .img-wrap iframe {
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 150%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  } */
+    
+.ever-pagi {
+    background-color: grey;
+    opacity: 0.8;
+    border-radius: 20px;
+    border-width: thin;
+}
+  
